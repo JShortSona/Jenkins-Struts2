@@ -24,8 +24,8 @@ node () {
           }''', tagName: "IQ-Policy-Evaluation_${currentBuild.number}"
     }
 
-    stage('Publish') {
-        nexusPublisher nexusInstanceId: 'nxrm3', nexusRepositoryId: 'maven-releases', packages: [[$class: 'MavenPackage', mavenAssetList: ["./target/struts2-rest-showcase.war"], mavenCoordinate: [artifactId: 'struts2-rest-showcase', groupId: 'org.apache.struts', packaging: 'war', version: '2.5.10']]], tagName: "IQ-Policy-Evaluation_${currentBuild.number}"
-    }
+    //stage('Publish') {
+        //nexusPublisher nexusInstanceId: 'nxrm3', nexusRepositoryId: 'maven-releases', packages: [[$class: 'MavenPackage', mavenAssetList: ["./target/struts2-rest-showcase.war"], mavenCoordinate: [artifactId: 'struts2-rest-showcase', groupId: 'org.apache.struts', packaging: 'war', version: '2.5.10']]], tagName: "IQ-Policy-Evaluation_${currentBuild.number}"
+    //}
 }  
 
