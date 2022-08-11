@@ -13,7 +13,7 @@ node () {
 
    stage('IQ Policy Check') {
         env.GIT_REPO_NAME = env.GIT_URL.replaceFirst(/^.*\/([^\/]+?).git$/, '$1')
-        policyEvaluation = nexusPolicyEvaluation failBuildOnNetworkError: false, iqScanPatterns: [[scanPattern: 'target/struts2-rest-showcase.war']], iqApplication: "${env.GIT_REPO_NAME}", iqStage: 'build', jobCredentialsId: ''
+        policyEvaluation = nexusPolicyEvaluation failBuildOnNetworkError: false, iqScanPatterns: [[scanPattern: 'target/struts2-rest-showcase.war']], iqApplication: "struts2-rce", iqStage: 'build', jobCredentialsId: ''
         sh "echo ${policyEvaluation.applicationCompositionReportUrl}"
    }
 
