@@ -1,7 +1,6 @@
 package it.org.apache.struts2.rest.example;
 
 import net.sourceforge.jwebunit.junit.WebTestCase;
-import com.fasterxml.jackson.core.jackson-databind;
 
 public class GetOrdersTest extends WebTestCase {
 
