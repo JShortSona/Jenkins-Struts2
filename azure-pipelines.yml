@@ -24,5 +24,5 @@ steps:
   inputs:
     nexusIqService: 'Ngrok-Free-NXLC'
     applicationId: 'Struts2-rce-ado-2'
-    stage: 'Release'
+    stage: 'build'
     scanTargets: '**/*.jar, **/*.war, **/*.ear, **/*.zip, **/*.tar.gz, !**/struts2-rest-showcase-sources.jar'
